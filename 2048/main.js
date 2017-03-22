@@ -22,6 +22,8 @@ function prepareForMobile(){
 		cellSideLength = 100;
 	}
 
+	$('#game-container').css('width',gridContainerWidth);
+	$('#game-container').css('height',gridContainerWidth);
 	$('#grid-container').css('width',gridContainerWidth-2*cellSpace);
 	$('#grid-container').css('height',gridContainerWidth-2*cellSpace);
 	$('#grid-container').css('padding',cellSpace);
@@ -57,7 +59,11 @@ function init(){
 		}
 	}
 
-	updateBoardView();
+	//隐藏gameover
+	$("#game-message").fadeOut("slow");
+	//分数归0
+	updateScore(0);
+ 	updateBoardView();
 	score = 0;
 }
 //更新格盘显示
@@ -223,7 +229,7 @@ function isgameover(){
 }
 
 function gameover(){
-	alert("gameover");
+	$("#game-message").fadeIn(1000);
 }
 
 function moveLeft(){
