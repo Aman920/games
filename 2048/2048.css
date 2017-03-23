@@ -56,20 +56,3 @@ header p{
 	text-align: center;
 	position: absolute;
 }
-/* #grid-container{
-	background-color: #A19B94;
-	border: 20px #9f8b77 solid;
-	border-radius: 10px;
-	height: 500px;
-	margin: 0 auto;
-	width: 500px;
-}
-#grid-container .grid-cell{
-	display: inline-block;
-	width: 100px;
-	height: 100px;
-	margin: 10px;
-	border-radius: 5px;
-	background-color: #897D6B;
-	color: #766B6B;
-} */
