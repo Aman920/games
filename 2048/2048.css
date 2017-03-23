@@ -30,11 +30,11 @@ header p{
 	margin: 20px auto;
 }
 #game-container{
-	border: 1px yellow solid;
 	width: 500px;
 	height: 500px;
 	position: relative;
 	text-align: center;
+	margin: 0 auto;
 }
 #game-container #game-message{
 	display: none;
